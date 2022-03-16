@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WYSIWYG Editor</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body data-editor="DecoupledDocumentEditor" data-collaboration="false" data-revision-history="false">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    data-editor="DecoupledDocumentEditor"
+    data-collaboration="false"
+    data-revision-history="false"
+  >
     <div class="centered wysiwyg">
-        <div class="row">
-            <div class="document-editor__toolbar"></div>
+      <div class="row">
+        <div class="document-editor__toolbar"></div>
+      </div>
+      <div class="row row-editor">
+        <div class="editor-container">
+          <div class="editor"></div>
         </div>
-        <div class="row row-editor">
-            <div class="editor-container">
-                <div class="editor">
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
     </div>
 
     <script src="./build/ckeditor.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
